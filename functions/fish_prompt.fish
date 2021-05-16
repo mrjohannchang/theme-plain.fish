@@ -37,7 +37,7 @@ function fish_prompt
     set -l red (set_color -o red)
     set -l white (set_color -o white)
     set -l yellow (set_color -o yellow)
-    if tput setaf 1 > /dev/null ^&1
+    if tput setaf 1 &> /dev/null
         set bold (tput bold)
         set reset (tput sgr0)
         # Solarized colors, taken from http://git.io/solarized-colors.
